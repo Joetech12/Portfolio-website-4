@@ -1,0 +1,407 @@
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  white-space: nowrap;
+  width: 170px;
+  height: 56px;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-heading2);
+  border: 2px solid var(--color-primary);
+}
+
+.btn--primary:hover {
+  background: #383737;
+  color: var(--color-heading2);
+  font-weight: 700;
+}
+
+.btn--outline {
+  background-color: none;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  position: relative;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.btn--outline:hover {
+  transform: scale(1.1);
+}
+
+.btn--stretched {
+  background: var(--color-neutral);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 1.6rem 3rem 1.6rem 2.1rem;
+  width: 255px;
+  height: 56px;
+}
+
+.btn--stretched:hover {
+  background: var(--color-neutral);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 1.6rem 3rem 1.6rem 2.1rem;
+  border: 3px solid var(--color-primary);
+  font-weight: 700;
+  width: 255px;
+  height: 56px;
+}
+
+@media screen and (max-width: 320px) {
+  .btn--stretched {
+    background: var(--color-neutral);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    padding: 1.6rem 3rem 1.6rem 2.1rem;
+    width: 220px;
+    height: 56px;
+  }
+
+  .btn--stretched:hover {
+    background: var(--color-neutral);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    padding: 1.6rem 3rem 1.6rem 2.1rem;
+    border: 3px solid var(--color-primary);
+    font-weight: 700;
+    width: 220px;
+    height: 56px;
+  }
+}
+
+/* Icons */
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--toggler {
+  width: 35px;
+  height: 35px;
+}
+
+.icon--big {
+  width: 110px;
+  height: auto;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: var(--color-neutral);
+}
+
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
+}
+
+/* Cards */
+
+.card {
+}
+
+.card__image {
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0 0 9px 2px rgb(119, 119, 119, 0.2);
+  border-radius: 15px;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+
+.card__image:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 9px 5px rgb(119, 119, 119, 0.2);
+}
+
+.card__header {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card__body {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 991px) {
+  .card__image {
+    margin-bottom: 10px;
+  }
+
+  .card__header {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card__body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    text-align: center;
+  }
+
+  .card__image {
+    margin-bottom: 10px;
+  }
+
+  .card__header {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card__body {
+    font-size: 16px;
+  }
+}
+
+/* Testimonials */
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.testimonial__image {
+  width: 108px;
+  height: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 0px 5px var(--color-neutral), 0 0 0px 7px grey;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.testimonial__image:hover{
+  transform: scale(1.1);
+}
+
+.testimonial__body {
+  font-size: 1.8rem;
+  font-style: italic;
+  width: 400px;
+  height: auto;
+  text-align: center;
+  
+}
+
+.testimonial__body::before{
+  content: "";
+  position: absolute;
+  background: url(/images/left-quote.png);
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: 0;
+}
+
+.body-container{
+  position: relative;
+}
+
+.quote1{
+ width: 30px;
+ position: absolute;
+ left: -10px;
+ top: -30px;
+}
+
+.quote2{
+ width: 30px;
+ position: absolute;
+ left: -10px;
+ top: -30px;
+}
+.quote3{
+ width: 30px;
+ position: absolute;
+ left: -20px;
+ top: -30px;
+}
+
+.testimonial__author {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.testimonial__company {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.testimonial__rating {
+  width: 124px;
+  height: 23px;
+}
+
+@media screen and (max-width: 479px) {
+  .testimonial__body {
+    font-size: 1.6rem;
+    font-style: italic;
+    width: 229px;
+    height: auto;
+    text-align: center;
+  }
+
+  .testimonial__author {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .testimonial__company {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  .quote1{
+    width: 30px;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+   }
+   
+   .quote2{
+    width: 30px;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+   }
+
+}
+@media screen and (max-width: 240px) {
+  .testimonial__body {
+    font-size: 1.6rem;
+    font-style: italic;
+    width: 229px;
+    height: auto;
+    text-align: center;
+  }
+
+  .testimonial__author {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .testimonial__company {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+}
+
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+/* Collapsibles */
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100%;
+  opacity: 1;
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
